@@ -81,6 +81,7 @@ public class Enterprise : IEnterprise
     public IEnumerable<Employee> GetByPosition(Position position)
     {
         var result = this.employeeDict.Values.Where(x => x.Position.Equals(position));
+
         if (!result.Any())
         {
             throw new ArgumentException();
@@ -92,6 +93,7 @@ public class Enterprise : IEnterprise
     public IEnumerable<Employee> GetBySalary(double minSalary)
     {
         var result = this.employeeDict.Values.Where(x => x.Salary >= minSalary);
+
         if (!result.Any())
         {
             throw new InvalidOperationException();
@@ -103,6 +105,7 @@ public class Enterprise : IEnterprise
     public IEnumerable<Employee> GetBySalaryAndPosition(double salary, Position position)
     {
         var result = this.employeeDict.Values.Where(x => x.Position == position && x.Salary.Equals(salary));
+
         if (!result.Any())
         {
             throw new InvalidOperationException();
@@ -118,7 +121,7 @@ public class Enterprise : IEnterprise
         {
             if (keyValuePair.Value.HireDate.AddMonths(months) <= date)
             {
-                keyValuePair.Value.Salary = keyValuePair.Value.Salary * ((percent / 100.0) + 1);
+                keyValuePair.Value.Salary += keyValuePair.Value.Salary * (percent / 100.0);
                 result = true;
             }
         }
