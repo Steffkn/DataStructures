@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
-public class AVLTests
+public class AVLUnitTests
 {
     [TestMethod]
     public void TraverseInOrder_AfterSingleInsert()

@@ -3,7 +3,7 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
-public class UnitTestsBinarySearchTree
+public class BinarySearchTreeLabUnitTests
 {
     [TestMethod]
     public void Insert_Single_TraverseInOrder()

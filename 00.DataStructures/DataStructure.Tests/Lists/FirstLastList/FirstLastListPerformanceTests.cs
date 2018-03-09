@@ -2,7 +2,7 @@
 using System.Linq;
 
 [TestClass]
-public class PerformanceTestsFirstLastList
+public class FirstLastListPerformanceTests
 {
     private IFirstLastList<Product> products =
         FirstLastListFactory.Create<Product>();

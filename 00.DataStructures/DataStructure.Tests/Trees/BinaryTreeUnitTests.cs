@@ -6,7 +6,7 @@ using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
-public class UnitTestsBinaryTree
+public class BinaryTreeUnitTests
 {
     [TestMethod]
     public void BuildBinaryTree_ForEachTraversal_InOrder_ShouldWorkCorrectly()

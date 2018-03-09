@@ -1,11 +1,10 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
 
 namespace BinaryHeap.Tests
 {
     [TestClass]
-    public class TestBinaryHeap
+    public class BinaryHeapUnitTests
     {
         [TestMethod]
         public void Insert_Single_TestCount()

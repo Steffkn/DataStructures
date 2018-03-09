@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
-public class AllTests
+public class LinkedListLabUnitTests
 {
     [TestMethod]
     public void AddFirst_ShouldIncreaseCount()

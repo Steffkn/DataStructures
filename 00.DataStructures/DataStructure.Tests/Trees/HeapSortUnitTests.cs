@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
-public class TestHeapSort
+public class HeapSortUnitTests
 {
     [TestMethod]
     public void Sort_SingleElement()

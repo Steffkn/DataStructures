@@ -4,7 +4,7 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
-public class UnitTestsHashTable
+public class HashTableUnitTests
 {
     [TestMethod]
     public void Add_EmptyHashTable_NoDuplicates_ShouldAddElement()

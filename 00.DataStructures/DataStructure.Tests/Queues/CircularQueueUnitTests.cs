@@ -3,7 +3,7 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
-public class UnitTestsCircularQueue
+public class CircularQueueUnitTests
 {
     [TestMethod]
     public void Enqueue_EmptyQueue_ShouldAddElement()

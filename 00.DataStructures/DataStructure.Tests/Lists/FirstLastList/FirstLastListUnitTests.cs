@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 
 [TestClass]
-public class UnitTestsFirstLastList
+public class FirstLastListUnitTests
 {
     [TestMethod]
     public void Add2Items_Count_ShouldReturn2()

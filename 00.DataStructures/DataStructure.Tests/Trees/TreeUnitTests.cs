@@ -6,7 +6,7 @@ using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
-public class UnitTestsTree
+public class TreeUnitTests
 {
     [TestMethod]
     public void BuildTree_ForEachTraversal_ShouldWorkCorrectly()

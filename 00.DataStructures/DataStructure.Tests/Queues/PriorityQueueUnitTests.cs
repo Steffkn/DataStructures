@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
-public class TestsPriorityQueue
+public class PriorityQueueUnitTests
 {
     [TestMethod]
     public void DecreaseKey_SingleElement()

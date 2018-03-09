@@ -1,9 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Security.Cryptography;
 
 [TestClass]
-public class ArrayListTests
+public class ArrayListUnitTests
 {
     [TestMethod]
     public void AddSingleElementShouldIncreaseCount()

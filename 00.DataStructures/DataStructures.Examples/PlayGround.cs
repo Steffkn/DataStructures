@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-public class PlayWithTrees
+public class PlayGround
 {
     static void Main()
     {

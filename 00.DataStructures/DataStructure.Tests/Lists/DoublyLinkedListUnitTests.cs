@@ -7,7 +7,7 @@ namespace DoublyLinkedList.Tests
     using System.Collections.Generic;
 
     [TestClass]
-    public class UnitTestsDoublyLinkedList
+    public class DoublyLinkedListUnitTests
     {
         [TestMethod]
         public void AddFirst_EmptyList_ShouldAddElement()

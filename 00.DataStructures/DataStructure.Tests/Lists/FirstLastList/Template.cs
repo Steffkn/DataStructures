@@ -1,17 +1,4 @@
-﻿using NUnit.Framework;
-using System;
-using System.Linq;
-using System.Collections.Generic;
-
-[TestFixture]
-public class TestClass1
-{
-    [Test]
-    public void TestMethod1()
-    {
-
-    }
-}
+﻿using System;
 
 class Product : IComparable<Product>
 {
