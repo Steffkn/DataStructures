@@ -28,7 +28,7 @@ public class FirstLastList<T> : IFirstLastList<T> where T : IComparable<T>
         LinkedListNode<T> node = new LinkedListNode<T>(element);
         this.ByAscending.Add(node);
         this.ByDescending.Add(node);
-        this.ByInsertion.AddLast(element);
+        this.ByInsertion.AddLast(node);
     }
 
     public void Clear()
@@ -95,13 +95,15 @@ public class FirstLastList<T> : IFirstLastList<T> where T : IComparable<T>
 
     public int RemoveAll(T element)
     {
-        LinkedListNode<T> node = new LinkedListNode<T>(element);
+        var node = new LinkedListNode<T>(element);
+        var range = this.ByAscending.Range(node, true, node, true);
 
-        foreach (var item in ByAscending.Range(node,true,node,true))
+        foreach (var item in range)
         {
-            this.ByInsertion.Remove(item.Value);
+            ByInsertion.Remove(item);
         }
-        int count = this.ByAscending.RemoveAllCopies(node);
+
+        var count = this.ByAscending.RemoveAllCopies(node);
         this.ByDescending.RemoveAllCopies(node);
 
         return count;

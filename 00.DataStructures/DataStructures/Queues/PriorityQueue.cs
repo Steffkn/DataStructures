@@ -45,7 +45,13 @@ public class PriorityQueue<T> where T : IComparable<T>
 
     public void DecreaseKey(T item)
     {
-        throw new NotImplementedException();
+        for (int i = 0; i < this.Count; i++)
+        {
+            if (this.heap[i].Equals(item))
+            {
+                HeapifyUp(i);
+            }
+        }
     }
 
     private void HeapifyUp(int index)
