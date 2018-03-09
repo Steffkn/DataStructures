@@ -95,7 +95,6 @@ public class FirstLastList<T> : IFirstLastList<T> where T : IComparable<T>
 
     public int RemoveAll(T element)
     {
-
         LinkedListNode<T> node = new LinkedListNode<T>(element);
 
         foreach (var item in ByAscending.Range(node,true,node,true))
