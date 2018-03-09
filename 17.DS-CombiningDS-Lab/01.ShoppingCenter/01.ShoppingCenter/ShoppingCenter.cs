@@ -6,16 +6,16 @@ public class ShoppingCenter : IShoppingCenter
 {
     private Dictionary<string, List<Product>> productsByProducer;
     private Dictionary<string, List<Product>> productsByName;
-    private Dictionary<decimal, List<Product>> productsByPrice;
+    private Dictionary<double, List<Product>> productsByPrice;
 
     public ShoppingCenter()
     {
         productsByProducer = new Dictionary<string, List<Product>>();
         productsByName = new Dictionary<string, List<Product>>();
-        productsByPrice = new Dictionary<decimal, List<Product>>();
+        productsByPrice = new Dictionary<double, List<Product>>();
     }
 
-    public void AddProduct(string name, decimal price, string producer)
+    public void AddProduct(string name, double price, string producer)
     {
         var product = new Product(name, price, producer);
         if (!productsByProducer.ContainsKey(producer))
@@ -122,7 +122,7 @@ public class ShoppingCenter : IShoppingCenter
         }
     }
 
-    public void FindProductsByPriceRange(decimal fromPrice, decimal toPrice)
+    public void FindProductsByPriceRange(double fromPrice, double toPrice)
     {
         var products = this.productsByPrice.Where(p => p.Key >= fromPrice && p.Key <= toPrice);
         if (products.Any())
